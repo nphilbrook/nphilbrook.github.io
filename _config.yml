@@ -1,0 +1,11 @@
+---
+highlighter: rouge
+name: Unvarnished Infrastructure
+subtitle: tbd
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"

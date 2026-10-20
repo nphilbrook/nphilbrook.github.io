@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{% include header.html %}
+    <p>Below are the three most recent posts. To see a list of all posts, go <a href="all.html">here</a>.</p>
+    
+    {% for post in site.posts limit:3%}
+    <div class="front-post">
+      <h2>{{ post.title }}</h2>
+      <div class="small">{{ post.date | date: "%F" }} <a href="{{ post.url }}">[link]</a></div>
+      {{ post.content }}
+    </div>
+    {% endfor %}
+    <div class="small">
+      <blockquote>
+        Insert interesting quote here, or not
+      </blockquote>
+    </div>
+{% include footer.html no_index="True" %}
